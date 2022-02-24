@@ -14,7 +14,7 @@ import {
   ProgramContacts
 } from './pages/contact-us/ProgramContacts';
 import {
-  HOME, PROGRAM_CONTACTS, SITE_LOCATIONS
+  HOME_LINK, PROGRAM_CONTACTS_LINK, SITE_LOCATIONS_LINK
 } from './pages/constants';
 import {
   Programs
@@ -25,10 +25,10 @@ function App() {
     <div className="App">
       <h1>Welcome to CISC Edmonds!</h1>
       <Routes>
-        <Route path={HOME} element={<Home />} />
+        <Route path={HOME_LINK} element={<Home />} />
         <Route path="/programs/:program" element={<Programs />} />
-        <Route path={SITE_LOCATIONS} element={<SiteLocations />} />
-        <Route path={PROGRAM_CONTACTS} element={<ProgramContacts />} />
+        <Route path={SITE_LOCATIONS_LINK} element={<SiteLocations />} />
+        <Route path={PROGRAM_CONTACTS_LINK} element={<ProgramContacts />} />
       </Routes>
     </div>
   );

@@ -1,59 +1,80 @@
-export const HOME = "/";
+export const HOME_LINK = "/";
 
-export const ABOUT_US = "/about-us";
-export const BOARD_OF_DIRECTORS = "/about-us/board-of-directors";
-export const CAREERS = "/about-us/careers";
-export const ANNUAL_REPORTS = "/about-us/annual-reports";
-export const FAQS = "/about-us/faqs";
+export const ABOUT_US_LINK = "/about-us";
+export const ABOUT_US = "About Us";
+export const BOARD_OF_DIRECTORS_LINK = "/about-us/board-of-directors";
+export const BOARD_OF_DIRECTORS = "Leadership";
+export const CAREERS_LINK = "/about-us/careers";
+export const CAREERS = "Career Opportunities";
+export const ANNUAL_REPORTS_LINK = "/about-us/annual-reports";
+export const ANNUAL_REPORTS = "Annual Reports & Newsletters";
+export const FAQS_LINK = "/about-us/faqs";
+export const FAQS = "FAQs";
 
-export const EARLY_CHILDHOOD_EDUCATION = "/programs/early-childhood-education";
-export const YOUTH_DEVELOPMENT = "/programs/youth-development";
-export const FAMILY_SUPPORT = "/programs/family-support";
-export const SENIOR_AND_DISABLED_ADULT_SERVICES = "/programs/senior-and-disabled-adult-services";
-export const HEALTHCARE_ACCESS = "/programs/healthcare-access";
-export const CIVIC_ENGAGEMENT = "/programs/civic-engagement";
+export const EARLY_CHILDHOOD_EDUCATION_LINK = "/programs/early-childhood-education";
+export const EARLY_CHILDHOOD_EDUCATION = "Early Childhood Education";
+export const YOUTH_DEVELOPMENT_LINK = "/programs/youth-development";
+export const YOUTH_DEVELOPMENT = "Youth Development";
+export const FAMILY_SUPPORT_LINK = "/programs/family-support";
+export const FAMILY_SUPPORT = "Family Support";
+export const SENIOR_AND_DISABLED_ADULT_SERVICES_LINK = "/programs/senior-and-disabled-adult-services";
+export const SENIOR_AND_DISABLED_ADULT_SERVICES = "Senior and Disabled Adult Services";
+export const HEALTHCARE_ACCESS_LINK = "/programs/healthcare-access";
+export const HEALTHCARE_ACCESS = "Healthcare Access";
+export const CIVIC_ENGAGEMENT_LINK = "/programs/civic-engagement";
+export const CIVIC_ENGAGEMENT = "Civic Engagement";
 
-export const VOLUNTEER = "/get-involved/volunteer";
-export const IN_KIND_DONATION = "/get-involved/in-kind-donation";
+export const DONATION = "Donation";
+export const DONATION_LINK = "/";
+export const FRIENDSHIP_DINNER = "Friendship Dinner";
+export const FRIENDSHIP_DINNER_LINK = "/";
+export const VOLUNTEER_LINK = "/get-involved/volunteer";
+export const VOLUNTEER = "Volunteer";
+export const IN_KIND_DONATION_LINK = "/get-involved/in-kind-donation";
+export const IN_KIND_DONATION = "In-Kind & Stock Donations";
 
-export const RESOURCES = "/resources";
+export const RESOURCES_LINK = "/resources";
 
-export const SITE_LOCATIONS = "/contact-us/site-locations";
-export const PROGRAM_CONTACTS = "/contact-us/program-contacts";
+export const SITE_LOCATIONS_LINK = "/contact-us/site-locations";
+export const SITE_LOCATIONS = "Site Locations";
+export const PROGRAM_CONTACTS_LINK = "/contact-us/program-contacts";
+export const PROGRAM_CONTACTS = "Program Contacts";
+export const JOIN_NEWSLETTER_LINK = "/";
+export const JOIN_NEWSLETTER = "Join Our Newsletter List";
 
 export const SITE_DIR: Record<string, any> = {
-  "HOME": HOME,
+  "HOME": HOME_LINK,
   "ABOUT US": {
-    "About Us": ABOUT_US,
-    "Leadership": BOARD_OF_DIRECTORS,
-    "Career Opportunities": CAREERS,
-    "Annual Reports & Newsletters": ANNUAL_REPORTS,
-    "FAQs": FAQS
+    [ABOUT_US]: ABOUT_US_LINK,
+    [BOARD_OF_DIRECTORS]: BOARD_OF_DIRECTORS_LINK,
+    [CAREERS]: CAREERS_LINK,
+    [ANNUAL_REPORTS]: ANNUAL_REPORTS_LINK,
+    [FAQS]: FAQS_LINK
   },
   "PROGRAMS": {
-    "Early Childhood Education": EARLY_CHILDHOOD_EDUCATION,
-    "Youth Development": YOUTH_DEVELOPMENT,
-    "Family Support": FAMILY_SUPPORT,
-    "Senior and Disabled Adult Services": SENIOR_AND_DISABLED_ADULT_SERVICES,
-    "Healthcare Access": HEALTHCARE_ACCESS,
-    "Civic Engagement": CIVIC_ENGAGEMENT,
+    [EARLY_CHILDHOOD_EDUCATION]: EARLY_CHILDHOOD_EDUCATION_LINK,
+    [YOUTH_DEVELOPMENT]: YOUTH_DEVELOPMENT_LINK,
+    [FAMILY_SUPPORT]: FAMILY_SUPPORT_LINK,
+    [SENIOR_AND_DISABLED_ADULT_SERVICES]: SENIOR_AND_DISABLED_ADULT_SERVICES_LINK,
+    [HEALTHCARE_ACCESS]: HEALTHCARE_ACCESS_LINK,
+    [CIVIC_ENGAGEMENT]: CIVIC_ENGAGEMENT_LINK,
   },
   "GET INVOLVED": {
-    "Donation": "/",
-    "Friendship Dinner": "/",
-    "Volunteer": VOLUNTEER,
-    "In-Kind & Stock Donations": IN_KIND_DONATION
+    [DONATION]: DONATION_LINK,
+    [FRIENDSHIP_DINNER]: FRIENDSHIP_DINNER_LINK,
+    [VOLUNTEER]: VOLUNTEER_LINK,
+    [IN_KIND_DONATION]: IN_KIND_DONATION_LINK
   },
-  "RESOURCES": RESOURCES,
+  "RESOURCES": RESOURCES_LINK,
   "CONTACT US": {
-    "Site Locations": SITE_LOCATIONS,
-    "Program Contacts": PROGRAM_CONTACTS,
-    "Join our Newsletter": "/"
+    [SITE_LOCATIONS]: SITE_LOCATIONS_LINK,
+    [PROGRAM_CONTACTS]: PROGRAM_CONTACTS_LINK,
+    [JOIN_NEWSLETTER]: JOIN_NEWSLETTER_LINK
   }
 };
 
 export const PROGRAMS: any = {
-  [EARLY_CHILDHOOD_EDUCATION]: [
+  [EARLY_CHILDHOOD_EDUCATION_LINK]: [
     {
       "title":"Kaleidoscope Play and Learn",
       "content":[
@@ -86,7 +107,7 @@ export const PROGRAMS: any = {
       ]
     }
   ],
-  [YOUTH_DEVELOPMENT]: [
+  [YOUTH_DEVELOPMENT_LINK]: [
     {
       "title":"After School Program and Summer Learning Program",
       "content":[
@@ -94,7 +115,7 @@ export const PROGRAMS: any = {
       ]
     }
   ],
-  [FAMILY_SUPPORT]: [
+  [FAMILY_SUPPORT_LINK]: [
     {
       "title":"International Family Resource Center",
       "content":[
@@ -144,7 +165,7 @@ export const PROGRAMS: any = {
       ]
     }
   ],
-  [SENIOR_AND_DISABLED_ADULT_SERVICES]: [
+  [SENIOR_AND_DISABLED_ADULT_SERVICES_LINK]: [
     {
       "title":"Community Living Connections: Information, Assistance and Outreach Program ",
       "content":[
@@ -192,7 +213,7 @@ export const PROGRAMS: any = {
       ]
     }
   ],
-  [HEALTHCARE_ACCESS]: [
+  [HEALTHCARE_ACCESS_LINK]: [
     {
       "title":"Statewide Health Insurance Benefits Advisors (SHIBA)",
       "content":[
@@ -218,7 +239,7 @@ export const PROGRAMS: any = {
       ]
     }
   ],
-  [CIVIC_ENGAGEMENT]: [
+  [CIVIC_ENGAGEMENT_LINK]: [
     {
       "title":"",
       "content":[

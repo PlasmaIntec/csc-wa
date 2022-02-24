@@ -1,0 +1,57 @@
+h5 {
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-rendering: optimizeLegibility;
+}
+
+h1 {
+    font-family: "Roboto Condensed",sans-serif;
+    color: #6a2440;
+}
+
+h1, h2 {
+    font-family: "Roboto Condensed",sans-serif;
+    color: #6a2440;
+    text-transform: uppercase;
+    margin: 1rem 0 2.5rem 0;
+}
+
+em, i {
+    font-style: italic;
+}
+
+hr {
+    clear: both;
+    max-width: 64rem;
+    height: 0;
+    margin: 1.25rem auto;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #cacaca;
+    border-left: 0;
+    box-sizing: content-box;
+    overflow: visible;
+}
+
+.inspire {
+    background: #ded9ce;
+}
+
+.fullblock {
+    margin-bottom: 2rem;
+    padding: 2rem 0 4rem 0;
+}
+
+.carousel.slide {
+    margin: 0px auto 16px;
+    width: 750px;
+    height: 400px;
+}
+
+.active.carousel-item {
+    width: 750px;
+    height: 400px;
+    vertical-align: middle;
+}
