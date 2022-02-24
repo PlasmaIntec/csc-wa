@@ -36,3 +36,94 @@
     transform: rotate(360deg);
   }
 }
+
+.no-bullet {
+  margin-left: 0;
+  list-style: none;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 0;
+  background: #fefefe;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  overflow: hidden;
+  color: #0a0a0a;
+}
+
+.contents {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.contents-card {
+  background: #e8e4d9;
+  padding: 1rem;
+}
+
+.contents-card {
+  font-size: 1.25rem;
+}
+
+.contents-card .contents li:not(:last-child) {
+  border-bottom: 2px dotted #6a2440;
+  padding-bottom: 0.5rem;
+  margin-bottom: 0.5rem
+}
+
+.contents-card .contents li {
+  font-family: "Roboto Condensed",sans-serif;
+  color: #6a2440;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.contact-card {
+  text-align: left;
+  background: #badbd6;
+}
+
+.card-section {
+  font-size: 1.25rem;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+  padding: 1rem;
+}
+
+.card-intro {
+  font-family: "Roboto Condensed",sans-serif;
+  padding-bottom: 0;
+  color: #6a2440;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+a {
+  line-height: inherit; 
+  color: #6a2440;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a:focus, a:hover {
+  color: #903157;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Fira Sans","Droid Sans","Helvetica Neue",sans-serif
+}
+
+h3 {
+  font-size: 1.9375rem;
+}

@@ -1,5 +1,5 @@
 import {
-  Accordion, Anchor
+  Accordion, Anchor, Col, Container, Row
 } from "react-bootstrap"
 import {
   useLocation, useParams
@@ -17,13 +17,10 @@ import {
 export const Programs = () => {
   const location = useLocation();
   const path = location.pathname;
-  const urlParams = useParams();
-  const program = urlParams.program;
-  console.log(location, urlParams)
-  return (
-    <>
-      <Menu />
-      <ul>
+
+  const TableOfContents = (path: string) => (
+    <div className="card contents-card">
+      <ul className="contents no-bullet">
         {
           PROGRAMS[path].map((program: any) => {
             const {
@@ -39,25 +36,53 @@ export const Programs = () => {
           })
         }
       </ul>
-      {
-        PROGRAMS[path].map((program: any) => {
-          const {
-            title, content
-          } = program;
-          return (
-            <>
-              <h3>
-                <Anchor id={encode(title)}>
-                  {title}
-                </Anchor>
-              </h3>
-              <p>
-                {content}
-              </p>
-            </>
-          )
-        })
-      }
+    </div>
+  )
+
+  const ContactInfo = (path: string) => (
+    <div className="card contact-card">
+      <div className="card-section card-intro">FOR FURTHER INFORMATION, PLEASE CONTACT:</div>
+      <div className="card-section">
+        <b>Communicator</b>
+        <p>Cell: xxx-xxx-xxxx</p>
+      </div>
+    </div>
+  )
+
+  const Contents = (path: string) => (
+    PROGRAMS[path].map((program: any) => {
+      const {
+        title, content
+      } = program;
+      return (
+        <div className="contents">
+          <h3>
+            <Anchor id={encode(title)} className="toc-header">
+              {title}
+            </Anchor>
+          </h3>
+          <p>
+            {content}
+          </p>
+        </div>
+      )
+    })
+  )
+
+  return (
+    <>
+      <Menu />
+      <Container>
+        <Row className="justify-content-md-center">
+          <Col>
+            {TableOfContents(path)}
+            {ContactInfo(path)}
+          </Col>
+          <Col>
+            {Contents(path)}
+          </Col>
+        </Row>
+      </Container>
     </>
   )
 }

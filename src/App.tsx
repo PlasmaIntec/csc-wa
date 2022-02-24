@@ -2,8 +2,8 @@ import React from 'react';
 import {
   Routes, Route, Link
 } from "react-router-dom";
-import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 import {
   SiteLocations
 } from './pages/contact-us/SiteLocations';

@@ -55,28 +55,93 @@ export const SITE_DIR: Record<string, any> = {
 export const PROGRAMS: any = {
   [EARLY_CHILDHOOD_EDUCATION]: [
     {
-      title: "Kaleidoscope Play and Learn",
-      content: "Helps families prepare their young children for success in school and life. This program, reaches families in their neighborhoods and in their home languages weekly. Kids and their caregivers take part in play activities that include stories, music, game or crafts to support children’s early learning. Community services, parenting education, and child care resources available to help parents and caregivers raise healthy children. We operate this program in partnership and/or with funding from Best Starts for Kids, Child Care Resources, King County Library System, Seattle Public Library, and Sheng-Yen Lu Foundation."
+      "title":"Kaleidoscope Play and Learn",
+      "content":[
+        "Helps families prepare their young children for success in school and life. This program, reaches families in their neighborhoods and in their home languages weekly. Kids and their caregivers take part in play activities that include stories, music, game or crafts to support children’s early learning. Community services, parenting education, and child care resources available to help parents and caregivers raise healthy children. We operate this program in partnership and/or with funding from Best Starts for Kids, Child Care Resources, King County Library System, Seattle Public Library, and Sheng-Yen Lu Foundation.",
+        "View Kaleidoscope Play and Learn opportunities in Washington State."
+      ]
     },
     {
-      title: "CISC Bilingual Preschool",
-      content: "CISC’s Bilingual Preschool prepare children for school learning by providing a bilingual and bicultural environment. Our curriculum embraces the rich cultural and language backgrounds of families and children. The program prepares children for their first day of kindergarten by providing children with experiences that support their physical, social, emotional, cognitive, bilingual, and bicultural development. We focus on both individual and group problem-solving with teachers guiding and facilitating students’ development of critical skills."
+      "title":"CISC Bilingual Preschool",
+      "content":[
+        "CISC’s Bilingual Preschool prepare children for school learning by providing a bilingual and bicultural environment. Our curriculum embraces the rich cultural and language backgrounds of families and children. The program prepares children for their first day of kindergarten by providing children with experiences that support their physical, social, emotional, cognitive, bilingual, and bicultural development. We focus on both individual and group problem-solving with teachers guiding and facilitating students’ development of critical skills."
+      ]
+    },
+    {
+      "title":"ParentChild+",
+      "content":[
+        "Provides weekly home visiting services for low-income families with children 16 months to 3 years of age. In order to prepare children for preschool and kindergarten, services focus on early-literacy skills, learning through play and strengthening the parent-child interaction. Free books and toys are provided weekly to participating families."
+      ]
+    },
+    {
+      "title":"Child Care Health Consultation (CCHC)",
+      "content":[
+        "Provides childcare health consultation to grandparents, aunts and uncles, other family members, friends, and neighbors who help families take care of their children. CISC recognizes the tremendous role of these Family, Friend and Neighbor (FFN) caregivers in providing continuity of language, culture, and values to immigrant families and a nurturing, healthy, and supportive environment for the children in their care. We support FFN caregivers by providing information, resources, and support to strengthen their skills in guiding children’s physical, social-emotional, and cognitive development and kindergarten readiness."
+      ]
+    },
+    {
+      "title":"Universal Developmental Screening Program (UDS)",
+      "content":[
+        "Provides free developmental screening and referral services for immigrant and refugee families with children aged 0-5 years throughout the King County. The purpose of the program is checking to make sure children’s development is on track by using Ages and Stages Questionnaires (ASQ screening tools) and identifying any potential developmental delays or concerns."
+      ]
     }
   ],
   [YOUTH_DEVELOPMENT]: [
     {
-      title: "After School Program and Summer Learning Program",
-      content: "CISC’s after-school and summer programs support children and their families by providing a place for students to receive tutoring and building their leadership and social and emotional skills. Structured after-school activities during the school year and summer build youth developmental assets within a bilingual and bicultural environment including academic support, leadership training, and social skills. Program staff work closely with parents and family members to help them navigate the education system and advocate for their child’s needs through facilitated meetings with educators and the superintendent."
+      "title":"After School Program and Summer Learning Program",
+      "content":[
+        "CISC’s after-school and summer programs support children and their families by providing a place for students to receive tutoring and building their leadership and social and emotional skills. Structured after-school activities during the school year and summer build youth developmental assets within a bilingual and bicultural environment including academic support, leadership training, and social skills. Program staff work closely with parents and family members to help them navigate the education system and advocate for their child’s needs through facilitated meetings with educators and the superintendent."
+      ]
     }
   ],
   [FAMILY_SUPPORT]: [
     {
-      title: "International Family Resource Center",
-      content: "A place for families to go for connection, friendships, skill building, and family support services including advocacy, information & assistance, cultural activities, parent education, parent-child activities and play and learn groups, community building and education activities/workshops, and a weekly legal clinic. (Languages available in English and Chinese)"
+      "title":"International Family Resource Center",
+      "content":[
+        "A place for families to go for connection, friendships, skill building, and family support services including advocacy, information & assistance, cultural activities, parent education, parent-child activities and play and learn groups, community building and education activities/workshops, and a weekly legal clinic. (Languages available in English and Chinese)"
+      ]
     },
     {
-      title: "Family Resource Support Program",
-      content: "The Family Resource Support Program is a newly developed program to support Russian and Chinese speaking communities in East King County through a holistic approach that is linguistically and culturally appropriate. Our Family Resource Support Specialists provide professional assistance to immigrants and their families, such as information and direct assistance, education, outreach and advocacy, to help them to access resources and thrive in the community. The program works closely with city governments and network partners on the Eastside to address emerging needs impacting immigrant communities in areas such as affordable housing, financial stability, healthcare, education, civic engagement, etc."
+      "title":"Family Resource Support Program",
+      "content":[
+        "The Family Resource Support Program is a newly developed program to support Russian and Chinese speaking communities in East King County through a holistic approach that is linguistically and culturally appropriate. Our Family Resource Support Specialists provide professional assistance to immigrants and their families, such as information and direct assistance, education, outreach and advocacy, to help them to access resources and thrive in the community. The program works closely with city governments and network partners on the Eastside to address emerging needs impacting immigrant communities in areas such as affordable housing, financial stability, healthcare, education, civic engagement, etc.",
+        "Our service sites in Bellevue and Redmond are temporarily closed due to social distancing guidelines. Please contact the following phone numbers for assistance:",
+        "Russian language: 425-502-0883Chinese language: 425-289-6805 or 206-330-4627"
+      ]
+    },
+    {
+      "title":"Coalition Against Hate & Bias",
+      "content":[
+        "CISC is part of the Coalition Against Hate & Bias, which is supported by the King County Office of Equity and Social Justice and includes other community-based organizations in the region. The Coalition is a community-led initiative to address hate and bias incidents by strengthening and networking communities who experience racist and bigoted treatment and all forms of oppression. ",
+        "CISC is one of the administrators of the Hate and Bias Incident Response Survey to collect data from communities affected by hate and bias. When community members report hate and bias incidents to CISC, they can learn about resources and places to get support. In addition, data collected from the Coalition Partners will inform action and advocacy to strengthen the community. View our contact phone numbers on the left column of this webpage.",
+        "Learn about how to report an incident of hate or bias to CISC."
+      ]
+    },
+    {
+      "title":"Legal Clinic",
+      "content":[
+        "One of 30 legal clinics organized by the Asian Bar Association of Washington (ABAW) and sponsored by the King County Bar Association. The purpose of the clinic is to reduce the cultural and linguistic barriers faced by community members in their efforts to participate in and access the legal protections of the American justice system. The clinic utilizes volunteer attorneys through the ABAW and Perkins Coie to assist Pro Bono Clients on family, immigration, employment, housing and discrimination issues.",
+        "The Clinic operates on Tuesday evenings, 5:30-7:30pm. Contact Karia Wong at 206-957-8538 to schedule an appointment. Interpretation is provided upon request with advance notice."
+      ]
+    },
+    {
+      "title":"Employment Support and Training",
+      "content":[
+        "Through collaboration with local employers and organizations, connect job seekers to different employment opportunities at quarterly community job fairs and various employment events. Provide support for resume preparation and job application. Host job skills building trainings and workshops."
+      ]
+    },
+    {
+      "title":"ESL & Naturalization Classes",
+      "content":[
+        "Provides different levels of ESL classes, naturalization classes*, vocational ESL classes with bilingual (Mandarin/Cantonese) and English-only instructors. Classes are offered Tuesdays through Saturdays. Small group tutoring and one on one mock interviews are arranged when needed.",
+        "*Naturalization program is funded by the City of Seattle Office of Immigrant and Refugee Affairs and OneAmerica."
+      ]
+    },
+    {
+      "title":"Immigrant Parents and Caregivers Support and Education",
+      "content":[
+        "Empowers families by offering counseling, information, assistance and referrals to navigate school and government systems, resolve problems and establish resources and support. The goals are to support families and to promote immigrant families’ successful adjustment and independence. Parenting classes, support groups and individual counseling in order to offer realistic and practical approaches to meeting the challenges of raising bicultural Chinese American children."
+      ]
     }
   ],
   [SENIOR_AND_DISABLED_ADULT_SERVICES]: [
@@ -127,10 +192,40 @@ export const PROGRAMS: any = {
       ]
     }
   ],
-  [HEALTHCARE_ACCESS]: {
-
-  },
-  [CIVIC_ENGAGEMENT]: {
-
-  }
+  [HEALTHCARE_ACCESS]: [
+    {
+      "title":"Statewide Health Insurance Benefits Advisors (SHIBA)",
+      "content":[
+        "Statewide Health Insurance Benefits Advisors (SHIBA) provides free, unbiased and confidential help with Medicare and health care choices. We help to assess client’s health care coverage needs, determine general eligibility for health care coverage programs and provide enrollment help with Medicare."
+      ]
+    },
+    {
+      "title":"Health Benefit Exchange (HBE)",
+      "content":[
+        "Information & Assistance staff are certified in-person assisters for the HBE to enroll eligible individuals into the Affordable Care Act (ACA) health insurance program."
+      ]
+    },
+    {
+      "title":"Benefits Enrollment Center (BEC)",
+      "content":[
+        "First Regional BEC in the state of Washington that is funded by the National Council on Aging, provides person-centered assistance to low-income seniors and persons with disabilities in accessing all of the benefits for which they may be eligible, such as Medicare Part D Extra Help/Low-Income Subsidy (LIS), Medicare Savings Programs, Medicaid,  Supplemental Nutrition Assistance Program (SNAP), and Low-Income Home Energy Assistance Program."
+      ]
+    },
+    {
+      "title":"Emergency Medical Services (EMS)",
+      "content":[
+        "The Emergency Medical Services (EMS) Vulnerable Populations Strategic Initiative (VPSI) is a collaboration between the EMS Division, Public Health-Seattle & King County, fire departments, community-based organizations, and the University of Washington. Through this partnership, we conduct outreach and education on how the EMS system works and how to perform life-saving actions such as CPR. In addition, we also provide health education on important topics like stroke, hypertension, fall, and choking as a way to increase individual’s awareness of how to use 911 services under those circumstances. The program focuses on reaching limited English proficient communities as well as other vulnerable populations, such as seniors, who are at higher risk of life-threatening emergencies.\n\n \n "
+      ]
+    }
+  ],
+  [CIVIC_ENGAGEMENT]: [
+    {
+      "title":"",
+      "content":[
+        "Civic engagement is an integral part of CISC’s efforts to create opportunities for immigrants and their families to succeed. Over the decades, we have worked to improve and strengthen the communities we serve by being active in advocacy, policymaking, and community engagement.",
+        "Our current and recent efforts around civic engagement include:",
+        " "
+      ]
+    }
+  ]
 };
