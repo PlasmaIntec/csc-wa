@@ -13,6 +13,7 @@ import {
 import {
   HashLink as Link
 } from 'react-router-hash-link';
+import "./style.css";
 
 export const Programs = () => {
   const location = useLocation();

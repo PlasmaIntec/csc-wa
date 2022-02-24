@@ -1,0 +1,105 @@
+.top-bar {
+    min-height: 2.5rem;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+
+.top-bar, .top-bar ul {
+    background-color: #858077;
+}
+
+.top-bar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 0;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.row {
+    max-width: 64rem;
+    margin-right: auto;
+    margin-left: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+.top-bar .top-bar-left, .top-bar .top-bar-right {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    margin: 0;
+    padding: 0;
+}
+
+.top-bar .top-bar-right {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.top-bar .menu-item, .top-bar a, .top-bar li, .top-bar .top-bar-left, .top-bar ul {
+    height: 2.5rem;
+}
+
+.top-bar, .top-bar ul {
+    background-color: #858077;
+}
+
+.menu, .menu.horizontal {
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100%;
+}
+
+.top-bar .menu a:hover:not(.button) {
+    background: #575144;
+    color: #8cffd0;
+}
+
+.show {
+    background-color: #5f5c55;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background: #575144;
+}
+
+.nav-item.dropdown > div {
+    min-width: 300px;
+}
