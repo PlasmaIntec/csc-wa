@@ -1,9 +1,13 @@
-import { Accordion } from "react-bootstrap"
-import { Menu } from "../Menu"
+import {
+  Accordion
+} from "react-bootstrap"
+import {
+  Menu
+} from "../Menu"
 
 export const ProgramContacts = () => {
   return (
-    <>    
+    <>
       <Menu />
       <Accordion>
         <Accordion.Item eventKey="0">
