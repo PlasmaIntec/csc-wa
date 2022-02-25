@@ -14,11 +14,15 @@ import {
   ProgramContacts
 } from './pages/contact-us/ProgramContacts';
 import {
+  ABOUT_US_LINK,
   HOME_LINK, PROGRAM_CONTACTS_LINK, SITE_LOCATIONS_LINK
 } from './pages/constants';
 import {
   Programs
 } from './pages/programs/Programs';
+import {
+  AboutUs
+} from './pages/about-us/AboutUs';
 
 function App() {
   return (
@@ -29,6 +33,7 @@ function App() {
         <Route path="/programs/:program" element={<Programs />} />
         <Route path={SITE_LOCATIONS_LINK} element={<SiteLocations />} />
         <Route path={PROGRAM_CONTACTS_LINK} element={<ProgramContacts />} />
+        <Route path={ABOUT_US_LINK} element={<AboutUs />} />
       </Routes>
     </div>
   );
