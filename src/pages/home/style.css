@@ -55,3 +55,33 @@ hr {
     height: 400px;
     vertical-align: middle;
 }
+
+.footer {
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+    border-top: 1px solid #ccc;
+    margin-top: 3.75rem;
+    font-family: "Roboto Condensed",sans-serif;
+    background: #575144;
+    color: #fefefe;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.footer div {
+    text-align: left;
+    height: 6rem;
+    min-width: 6rem;
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+    margin-bottom: 1rem;
+}
+
+.footer a {
+    font-weight: 700;
+}
+
+#copyright {
+    text-align: center;
+}
