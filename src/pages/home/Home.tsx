@@ -168,47 +168,47 @@ const IconLinks = () => (
 )
 
 const Footer = () => (
-	<Container className="footer">
-		<Row>
-			<Col>
+  <Container className="footer">
+    <Row>
+      <Col>
 			LOGO
-			</Col>
-			<Col>
+      </Col>
+      <Col>
 			Phone: xxx xxx xxxx<br/>
 			Fax: xxx xxx xxxx<br/>
 			Email: <a>info@gmail.com</a>
-			</Col>
-			<Col>
-			<a>FAQs</a><br/>
-			<a>Contact Us</a>
-			</Col>
-			<Col>
+      </Col>
+      <Col>
+        <a>FAQs</a><br/>
+        <a>Contact Us</a>
+      </Col>
+      <Col>
 			Social Media
-			</Col>
-			<Col>
+      </Col>
+      <Col>
 			Donate
-			</Col>
-		</Row>
-		<Row>
-			<Col>
+      </Col>
+    </Row>
+    <Row>
+      <Col>
 			CISC Main Office<br/>
 			611 S Lane St<br/>
 			Seattle, WA 98104
-			</Col>
-			<Col>
+      </Col>
+      <Col>
 			Hours:<br/>
 			Monday through Friday<br/>
 			8:30 am - 5:00 pm
-			</Col>
-			<Col>
-			</Col>
-			<Col>
-			</Col>
-			<Col>
-			</Col>
-		</Row>
-		<div id="copyright">
+      </Col>
+      <Col>
+      </Col>
+      <Col>
+      </Col>
+      <Col>
+      </Col>
+    </Row>
+    <div id="copyright">
 			Copyright 2022. All rights reserved. Supported by United Way of King County.
-		</div>
-	</Container>
+    </div>
+  </Container>
 )

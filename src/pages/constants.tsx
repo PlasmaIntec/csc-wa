@@ -11,6 +11,25 @@ export const ANNUAL_REPORTS = "Annual Reports & Newsletters";
 export const FAQS_LINK = "/about-us/faqs";
 export const FAQS = "FAQs";
 
+export const ABOUT_US_LINKS = [
+  [
+    BOARD_OF_DIRECTORS,
+    BOARD_OF_DIRECTORS_LINK
+  ],
+  [
+    ANNUAL_REPORTS,
+    ANNUAL_REPORTS_LINK
+  ],
+  [
+    CAREERS,
+    CAREERS_LINK
+  ],
+  [
+    FAQS,
+    FAQS_LINK
+  ],
+]
+
 export const EARLY_CHILDHOOD_EDUCATION_LINK = "/programs/early-childhood-education";
 export const EARLY_CHILDHOOD_EDUCATION = "Early Childhood Education";
 export const YOUTH_DEVELOPMENT_LINK = "/programs/youth-development";
@@ -250,3 +269,14 @@ export const PROGRAMS: any = {
     }
   ]
 };
+
+export const FAQ: any = [
+  {
+    question: "What does CISC stand for?",
+    answer: "Chinese Information and Service Center"
+  },
+  {
+    question: "Do you only serve Chinese?",
+    answer: "No. Our primary focus is on Chinese immigrants and their families, but we also serve many immigrants from Eastern Europe, Latin America, and throughout Asia. Our Chinese clients come from all over Asia, from different countries, with different cultures, speaking many different dialects and languages. We do not turn anyone away because of their culture, race, or ethnicity."
+  }
+]
