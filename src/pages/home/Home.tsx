@@ -11,6 +11,7 @@ import {
 import {
   Menu
 } from "../Menu"
+import SVG from 'react-inlinesvg';
 import "./style.css";
 
 export const Home = () => {
@@ -84,32 +85,38 @@ const IconLinks = () => (
         <Row>
           <Col>
             <Link to={CIVIC_ENGAGEMENT_LINK} >
-              {CIVIC_ENGAGEMENT}
+              <SVG src="assets/panel-icon.svg"></SVG>
+              <p>{CIVIC_ENGAGEMENT}</p>
             </Link>
           </Col>
           <Col>
             <Link to={EARLY_CHILDHOOD_EDUCATION_LINK} >
-              {EARLY_CHILDHOOD_EDUCATION}
+              <SVG src="assets/child-icon.svg"></SVG>
+              <p>{EARLY_CHILDHOOD_EDUCATION}</p>
             </Link>
           </Col>
           <Col>
             <Link to={YOUTH_DEVELOPMENT_LINK} >
-              {YOUTH_DEVELOPMENT}
+              <SVG src="assets/network-icon.svg"></SVG>
+              <p>{YOUTH_DEVELOPMENT}</p>
             </Link>
           </Col>
           <Col>
             <Link to={FAMILY_SUPPORT_LINK} >
-              {FAMILY_SUPPORT}
+              <SVG src="assets/house-icon.svg"></SVG>
+              <p>{FAMILY_SUPPORT}</p>
             </Link>
           </Col>
           <Col>
             <Link to={SENIOR_AND_DISABLED_ADULT_SERVICES_LINK} >
-              {SENIOR_AND_DISABLED_ADULT_SERVICES}
+              <SVG src="assets/elderly-icon.svg"></SVG>
+              <p>{SENIOR_AND_DISABLED_ADULT_SERVICES}</p>
             </Link>
           </Col>
           <Col>
             <Link to={HEALTHCARE_ACCESS_LINK} >
-              {HEALTHCARE_ACCESS}
+              <SVG src="assets/heart-icon.svg"></SVG>
+              <p>{HEALTHCARE_ACCESS}</p>
             </Link>
           </Col>
         </Row>
@@ -121,17 +128,20 @@ const IconLinks = () => (
         <Row>
           <Col>
             <Link to={VOLUNTEER_LINK} >
-              {VOLUNTEER}
+              <SVG src="assets/medal-icon.svg"></SVG>
+              <p>{VOLUNTEER}</p>
             </Link>
           </Col>
           <Col>
             <Link to={"/"} >
-              {DONATION}
+              <SVG src="assets/piggy-bank-icon.svg"></SVG>
+              <p>{DONATION}</p>
             </Link>
           </Col>
           <Col>
             <Link to={IN_KIND_DONATION_LINK} >
-              {IN_KIND_DONATION}
+              <SVG src="assets/shopping-icon.svg"></SVG>
+              <p>{IN_KIND_DONATION}</p>
             </Link>
           </Col>
         </Row>
@@ -143,22 +153,26 @@ const IconLinks = () => (
         <Row>
           <Col>
             <Link to={PROGRAM_CONTACTS_LINK} >
-              {PROGRAM_CONTACTS}
+              <SVG src="assets/head-icon.svg"></SVG>
+              <p>{PROGRAM_CONTACTS}</p>
             </Link>
           </Col>
           <Col>
             <Link to={SITE_LOCATIONS_LINK} >
-              {SITE_LOCATIONS}
+              <SVG src="assets/apartments-icon.svg"></SVG>
+              <p>{SITE_LOCATIONS}</p>
             </Link>
           </Col>
           <Col>
             <Link to={FAQS_LINK} >
-              {FAQS}
+              <SVG src="assets/lightbulb-icon.svg"></SVG>
+              <p>{FAQS}</p>
             </Link>
           </Col>
           <Col>
             <Link to={CAREERS_LINK} >
-              {CAREERS}
+              <SVG src="assets/binoculars-icon.svg"></SVG>
+              <p>{CAREERS}</p>
             </Link>
           </Col>
         </Row>
@@ -171,7 +185,7 @@ const Footer = () => (
   <Container className="footer">
     <Row>
       <Col>
-			LOGO
+      <img className="logo" src="assets/csc-logo-white.png"></img>
       </Col>
       <Col>
 			Phone: xxx xxx xxxx<br/>

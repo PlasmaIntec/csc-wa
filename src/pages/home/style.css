@@ -85,3 +85,16 @@ hr {
 #copyright {
     text-align: center;
 }
+
+.logo {
+    max-width: 100%;
+    padding-top: 2rem;
+}
+
+.row {
+    justify-content: space-between;
+}
+
+.row .col {
+    max-width: 14rem;
+}
