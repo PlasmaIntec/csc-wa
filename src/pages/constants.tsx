@@ -33,8 +33,6 @@ export const CIVIC_ENGAGEMENT = "Civic Engagement";
 
 export const DONATION = "Donation";
 export const DONATION_LINK = "/";
-export const FRIENDSHIP_DINNER = "Friendship Dinner";
-export const FRIENDSHIP_DINNER_LINK = "/";
 export const VOLUNTEER_LINK = "/get-involved/volunteer";
 export const VOLUNTEER = "Volunteer";
 export const IN_KIND_DONATION_LINK = "/get-involved/in-kind-donation";
@@ -65,7 +63,6 @@ export const SITE_DIR: Record<string, any> = {
   },
   "GET INVOLVED": {
     [DONATION]: DONATION_LINK,
-    [FRIENDSHIP_DINNER]: FRIENDSHIP_DINNER_LINK,
     [VOLUNTEER]: VOLUNTEER_LINK,
     [IN_KIND_DONATION]: IN_KIND_DONATION_LINK
   },

@@ -19,7 +19,7 @@ import {
   BOARD_OF_DIRECTORS_LINK,
   CAREERS_LINK,
   FAQS_LINK,
-  HOME_LINK, PROGRAM_CONTACTS_LINK, SITE_LOCATIONS_LINK
+  HOME_LINK, IN_KIND_DONATION_LINK, PROGRAM_CONTACTS_LINK, SITE_LOCATIONS_LINK, VOLUNTEER_LINK
 } from './pages/constants';
 import {
   Programs
@@ -37,6 +37,8 @@ import {
   FAQs
 } from './pages/about-us/FAQs';
 import { Careers } from './pages/about-us/Careers';
+import { Volunteer } from './pages/get-involved/Volunteer';
+import { InKindDonation } from './pages/get-involved/InKindDonation';
 
 function App() {
   return (
@@ -53,6 +55,8 @@ function App() {
         <Route path={ANNUAL_REPORTS_LINK} element={<AnnualReports />} />
         <Route path={CAREERS_LINK} element={<Careers />} />
         <Route path={FAQS_LINK} element={<FAQs />} />
+        <Route path={VOLUNTEER_LINK} element={<Volunteer />} />
+        <Route path={IN_KIND_DONATION_LINK} element={<InKindDonation />} />
       </Routes>
     </div>
   );
