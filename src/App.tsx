@@ -41,7 +41,8 @@ import { Careers } from './pages/about-us/Careers';
 function App() {
   return (
     <div className="App">
-      <h1>Welcome to CISC Edmonds!</h1>
+      <h1 className="home-header">Welcome to Chinese Service Center</h1>      
+      <img className="home-red-logo" src="/assets/csc-logo.png"></img>
       <Routes>
         <Route path={HOME_LINK} element={<Home />} />
         <Route path="/programs/:program" element={<Programs />} />

@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+.home-header {
+  margin: 0;
+  padding-bottom: 2rem;
+}
+
+.home-red-logo {
+  padding-bottom: 2rem;
+}

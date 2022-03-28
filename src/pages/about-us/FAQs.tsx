@@ -27,7 +27,7 @@ export const FAQs = () => {
           <Col>                    
             {AboutUsTOC()}
           </Col>
-          <Col>
+          <Col xs={9}>
             <Accordion>
               {
                 FAQ.map((entry: { question: string; answer: string; }, index: number) => {

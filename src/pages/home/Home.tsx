@@ -80,7 +80,7 @@ const Banner = () => (
 const IconLinks = () => (
   <>	
     <div className="fullblock">
-      <h1>How We Help</h1>
+      <h1>Service Scope</h1>
       <Container>
         <Row>
           <Col>
@@ -169,12 +169,6 @@ const IconLinks = () => (
               <p>{FAQS}</p>
             </Link>
           </Col>
-          <Col>
-            <Link to={CAREERS_LINK} >
-              <SVG src="assets/binoculars-icon.svg"></SVG>
-              <p>{CAREERS}</p>
-            </Link>
-          </Col>
         </Row>
       </Container>
     </div>
@@ -185,12 +179,11 @@ const Footer = () => (
   <Container className="footer">
     <Row>
       <Col>
-      <img className="logo" src="assets/csc-logo-white.png"></img>
+      <img className="logo" src="/assets/csc-logo-white.png"></img>
       </Col>
       <Col>
-			Phone: xxx xxx xxxx<br/>
-			Fax: xxx xxx xxxx<br/>
-			Email: <a>info@gmail.com</a>
+			Phone: <br/>(206)227-7698<br/>
+			Email: <br/><a>info@csc-wa.org</a>
       </Col>
       <Col>
         <a>FAQs</a><br/>
@@ -206,13 +199,14 @@ const Footer = () => (
     <Row>
       <Col>
 			CISC Main Office<br/>
-			611 S Lane St<br/>
-			Seattle, WA 98104
+			22727 Hwy 99,<br/>
+      Suite 201A<br/>
+			Edmonds, WA 98026
       </Col>
       <Col>
 			Hours:<br/>
 			Monday through Friday<br/>
-			8:30 am - 5:00 pm
+			10:00 am - 5:00 pm
       </Col>
       <Col>
       </Col>

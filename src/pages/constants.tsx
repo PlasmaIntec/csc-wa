@@ -13,18 +13,6 @@ export const FAQS = "FAQs";
 
 export const ABOUT_US_LINKS = [
   [
-    BOARD_OF_DIRECTORS,
-    BOARD_OF_DIRECTORS_LINK
-  ],
-  [
-    ANNUAL_REPORTS,
-    ANNUAL_REPORTS_LINK
-  ],
-  [
-    CAREERS,
-    CAREERS_LINK
-  ],
-  [
     FAQS,
     FAQS_LINK
   ],
@@ -65,9 +53,6 @@ export const SITE_DIR: Record<string, any> = {
   "HOME": HOME_LINK,
   "ABOUT US": {
     [ABOUT_US]: ABOUT_US_LINK,
-    [BOARD_OF_DIRECTORS]: BOARD_OF_DIRECTORS_LINK,
-    [CAREERS]: CAREERS_LINK,
-    [ANNUAL_REPORTS]: ANNUAL_REPORTS_LINK,
     [FAQS]: FAQS_LINK
   },
   "PROGRAMS": {
@@ -84,7 +69,6 @@ export const SITE_DIR: Record<string, any> = {
     [VOLUNTEER]: VOLUNTEER_LINK,
     [IN_KIND_DONATION]: IN_KIND_DONATION_LINK
   },
-  "RESOURCES": RESOURCES_LINK,
   "CONTACT US": {
     [SITE_LOCATIONS]: SITE_LOCATIONS_LINK,
     [PROGRAM_CONTACTS]: PROGRAM_CONTACTS_LINK,
@@ -272,11 +256,27 @@ export const PROGRAMS: any = {
 
 export const FAQ: any = [
   {
-    question: "What does CISC stand for?",
-    answer: "Chinese Information and Service Center"
+    question: "What does CSC stand for?",
+    answer: "Chinese Service Center"
+  },
+  {
+    question: "Do I need to pay for the service provided by CSC?",
+    answer: "No. CSC is a non-profit organization, providing absolutely free service to the Chinese immigrants, including but not limited to information, referral, advocacy, social and language support, to assist the Chinese immigrants to quickly adapt to new environment and succeed in school, at work and in life."
   },
   {
     question: "Do you only serve Chinese?",
-    answer: "No. Our primary focus is on Chinese immigrants and their families, but we also serve many immigrants from Eastern Europe, Latin America, and throughout Asia. Our Chinese clients come from all over Asia, from different countries, with different cultures, speaking many different dialects and languages. We do not turn anyone away because of their culture, race, or ethnicity."
-  }
+    answer: "No. Our primary focus is on Chinese immigrants and their families, meanwhile we also serve new immigrants from Asian countries. Our service receipients come from different countries, with different cultures, speaking many different dialects and languages. We do not push anyone away because of their races, lanuages or culture."
+  },
+  {
+    question: "What languages and dialects do staff speak?",
+    answer: "Mandarin, Cantonese, Taiwanese dialects of Chinese; Vietnamese, Malay, Thailand and English. We are planning to expand our language coverage."
+  },
+  {
+    question: "Where is the geographic area coverage of your service?",
+    answer: "We are registered as a non-profit organization in Washington, therefore our service can cover any area within Washington State. Now, we focus our service in Snohomish County."
+  },
+  {
+    question: "Where do you get your funding to operate the service center?",
+    answer: "We aim at government grants and fundings (Federal, State, County, Cities), and welcome any fundings from organization and individual. Every penny counts!"
+  },
 ]

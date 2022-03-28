@@ -47,3 +47,7 @@
     background: #fefefe;
     color: #5b1f37;
 }
+
+.about-us-row.row {
+    width: 100%;
+}
