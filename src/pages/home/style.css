@@ -51,8 +51,6 @@ hr {
 }
 
 .active.carousel-item {
-    width: 750px;
-    height: 400px;
     vertical-align: middle;
 }
 
@@ -97,4 +95,8 @@ hr {
 
 .row .col {
     max-width: 14rem;
+}
+
+.home-gallery-row {
+    height: 640px;
 }

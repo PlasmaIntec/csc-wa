@@ -18,7 +18,9 @@ export const Home = () => {
   return (
 	  <div>
 		  <Menu />
-		  <Gallery />
+      <Row className="home-gallery-row">
+		    <Gallery />
+      </Row>
 		  <Banner />
 		  <IconLinks />
 		  <Footer />
@@ -26,13 +28,12 @@ export const Home = () => {
   )
 }
 
-// TODO: fix image resizing while transitioning between slides
 const Gallery = () => (
-  <Carousel interval={null} fade>
+  <Carousel interval={null}>
     <Carousel.Item>
       <img
         className="d-block w-100"
-        src="https://idsb.tmgrup.com.tr/ly/uploads/images/2021/09/08/thumbs/800x531/142774.jpg"
+        src="/assets/gallery-1.jpg"
         alt="First slide"
       />
       <Carousel.Caption>
@@ -43,23 +44,12 @@ const Gallery = () => (
     <Carousel.Item>
       <img
         className="d-block w-100"
-        src="https://icatcare.org/app/uploads/2018/06/Layer-1704-1200x630.jpg"
+        src="/assets/gallery-2.jpg"
         alt="Second slide"
       />
       <Carousel.Caption>
         <h3>Second slide label</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </Carousel.Caption>
-    </Carousel.Item>
-    <Carousel.Item>
-      <img
-        className="d-block w-100"
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbmnSabWD5a0W1Sasnht8NGqrRCDtSzFapGQ&usqp=CAU"
-        alt="Third slide"
-      />
-      <Carousel.Caption>
-        <h3>Third slide label</h3>
-        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
       </Carousel.Caption>
     </Carousel.Item>
   </Carousel>
