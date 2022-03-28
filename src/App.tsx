@@ -36,9 +36,15 @@ import {
 import {
   FAQs
 } from './pages/about-us/FAQs';
-import { Careers } from './pages/about-us/Careers';
-import { Volunteer } from './pages/get-involved/Volunteer';
-import { InKindDonation } from './pages/get-involved/InKindDonation';
+import {
+  Careers
+} from './pages/about-us/Careers';
+import {
+  Volunteer
+} from './pages/get-involved/Volunteer';
+import {
+  InKindDonation
+} from './pages/get-involved/InKindDonation';
 
 function App() {
   return (

@@ -73,7 +73,9 @@ const Banner = () => (
   </>
 )
 
-const IconLinks = ({ chunks }: { chunks: any }) => (
+const IconLinks = ({
+  chunks
+}: { chunks: any }) => (
   <>	
     <div className="fullblock">
       <h1>Service Scope</h1>
@@ -83,7 +85,10 @@ const IconLinks = ({ chunks }: { chunks: any }) => (
             <Row>
               {
                 chunk.map((program: string[]) => {
-                  const [programName, programLink] = program;
+                  const [
+                    programName,
+                    programLink
+                  ] = program;
                   return (
                     <Col>
                       <Link to={programLink} >
@@ -157,7 +162,7 @@ const Footer = () => (
   <Container className="footer">
     <Row>
       <Col>
-      <img className="logo" src="/assets/csc-logo-white.png"></img>
+        <img className="logo" src="/assets/csc-logo-white.png"></img>
       </Col>
       <Col>
 			Phone: <br/>(206)227-7698<br/>
