@@ -6,15 +6,21 @@ import {
   Link
 } from "react-router-dom";
 import {
-  CAREERS, CAREERS_LINK, CIVIC_ENGAGEMENT, CIVIC_ENGAGEMENT_LINK, DONATION, EARLY_CHILDHOOD_EDUCATION, EARLY_CHILDHOOD_EDUCATION_LINK, FAMILY_SUPPORT, FAMILY_SUPPORT_LINK, FAQS, FAQS_LINK, HEALTHCARE_ACCESS, HEALTHCARE_ACCESS_LINK, IN_KIND_DONATION, IN_KIND_DONATION_LINK, PROGRAM_CONTACTS, PROGRAM_CONTACTS_LINK, SENIOR_AND_DISABLED_ADULT_SERVICES, SENIOR_AND_DISABLED_ADULT_SERVICES_LINK, SITE_LOCATIONS, SITE_LOCATIONS_LINK, VOLUNTEER, VOLUNTEER_LINK, YOUTH_DEVELOPMENT, YOUTH_DEVELOPMENT_LINK
+  CAREERS, CAREERS_LINK, CIVIC_ENGAGEMENT, CIVIC_ENGAGEMENT_LINK, DONATION, EARLY_CHILDHOOD_EDUCATION, EARLY_CHILDHOOD_EDUCATION_LINK, FAMILY_SUPPORT, FAMILY_SUPPORT_LINK, FAQS, FAQS_LINK, HEALTHCARE_ACCESS, HEALTHCARE_ACCESS_LINK, IN_KIND_DONATION, IN_KIND_DONATION_LINK, PROGRAM_CONTACTS, PROGRAM_CONTACTS_LINK, PROGRAM_TO_ICON, SENIOR_AND_DISABLED_ADULT_SERVICES, SENIOR_AND_DISABLED_ADULT_SERVICES_LINK, SITE_DIR, SITE_LOCATIONS, SITE_LOCATIONS_LINK, VOLUNTEER, VOLUNTEER_LINK, YOUTH_DEVELOPMENT, YOUTH_DEVELOPMENT_LINK
 } from "../constants";
 import {
   Menu
 } from "../Menu"
 import SVG from 'react-inlinesvg';
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+import * as _ from "lodash";
 import "./style.css";
 
 export const Home = () => {
+
+  const chunks = _.chunk(Object.entries(SITE_DIR.PROGRAMS), 5);
+  
   return (
 	  <div>
 		  <Menu />
@@ -22,7 +28,7 @@ export const Home = () => {
 		    <Gallery />
       </Row>
 		  <Banner />
-		  <IconLinks />
+		  <IconLinks chunks={chunks} />
 		  <Footer />
 	  </div>
   )
@@ -67,70 +73,52 @@ const Banner = () => (
   </>
 )
 
-const IconLinks = () => (
+const IconLinks = ({ chunks }: { chunks: any }) => (
   <>	
     <div className="fullblock">
       <h1>Service Scope</h1>
       <Container>
-        <Row>
-          <Col>
-            <Link to={CIVIC_ENGAGEMENT_LINK} >
-              <SVG src="assets/panel-icon.svg"></SVG>
-              <p>{CIVIC_ENGAGEMENT}</p>
-            </Link>
-          </Col>
-          <Col>
-            <Link to={EARLY_CHILDHOOD_EDUCATION_LINK} >
-              <SVG src="assets/child-icon.svg"></SVG>
-              <p>{EARLY_CHILDHOOD_EDUCATION}</p>
-            </Link>
-          </Col>
-          <Col>
-            <Link to={YOUTH_DEVELOPMENT_LINK} >
-              <SVG src="assets/network-icon.svg"></SVG>
-              <p>{YOUTH_DEVELOPMENT}</p>
-            </Link>
-          </Col>
-          <Col>
-            <Link to={FAMILY_SUPPORT_LINK} >
-              <SVG src="assets/house-icon.svg"></SVG>
-              <p>{FAMILY_SUPPORT}</p>
-            </Link>
-          </Col>
-          <Col>
-            <Link to={SENIOR_AND_DISABLED_ADULT_SERVICES_LINK} >
-              <SVG src="assets/elderly-icon.svg"></SVG>
-              <p>{SENIOR_AND_DISABLED_ADULT_SERVICES}</p>
-            </Link>
-          </Col>
-          <Col>
-            <Link to={HEALTHCARE_ACCESS_LINK} >
-              <SVG src="assets/heart-icon.svg"></SVG>
-              <p>{HEALTHCARE_ACCESS}</p>
-            </Link>
-          </Col>
-        </Row>
+        {
+          chunks.map((chunk: any) => (
+            <Row>
+              {
+                chunk.map((program: string[]) => {
+                  const [programName, programLink] = program;
+                  return (
+                    <Col>
+                      <Link to={programLink} >
+                        <SVG src={PROGRAM_TO_ICON[programName]}></SVG>
+                        <p>{programName}</p>
+                      </Link>
+                    </Col>
+                  )}
+                )
+              }
+            </Row>
+          ))
+        }
       </Container>
     </div>
+    {/* TODO: refactor Take Action and Stay In Touch sections using PROGRAM_TO_ICON */}
     <div className="inspire fullblock">
       <h1>Take Action</h1>
       <Container>
         <Row>
           <Col>
             <Link to={VOLUNTEER_LINK} >
-              <SVG src="assets/medal-icon.svg"></SVG>
+              <SVG src="assets/icons/medal-icon.svg"></SVG>
               <p>{VOLUNTEER}</p>
             </Link>
           </Col>
           <Col>
             <Link to={"/"} >
-              <SVG src="assets/piggy-bank-icon.svg"></SVG>
+              <SVG src="assets/icons/piggy-bank-icon.svg"></SVG>
               <p>{DONATION}</p>
             </Link>
           </Col>
           <Col>
             <Link to={IN_KIND_DONATION_LINK} >
-              <SVG src="assets/shopping-icon.svg"></SVG>
+              <SVG src="assets/icons/shopping-icon.svg"></SVG>
               <p>{IN_KIND_DONATION}</p>
             </Link>
           </Col>
@@ -143,19 +131,19 @@ const IconLinks = () => (
         <Row>
           <Col>
             <Link to={PROGRAM_CONTACTS_LINK} >
-              <SVG src="assets/head-icon.svg"></SVG>
+              <SVG src="assets/icons/head-icon.svg"></SVG>
               <p>{PROGRAM_CONTACTS}</p>
             </Link>
           </Col>
           <Col>
             <Link to={SITE_LOCATIONS_LINK} >
-              <SVG src="assets/apartments-icon.svg"></SVG>
+              <SVG src="assets/icons/apartments-icon.svg"></SVG>
               <p>{SITE_LOCATIONS}</p>
             </Link>
           </Col>
           <Col>
             <Link to={FAQS_LINK} >
-              <SVG src="assets/lightbulb-icon.svg"></SVG>
+              <SVG src="assets/icons/lightbulb-icon.svg"></SVG>
               <p>{FAQS}</p>
             </Link>
           </Col>

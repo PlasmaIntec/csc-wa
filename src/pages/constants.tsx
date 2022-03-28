@@ -18,6 +18,7 @@ export const ABOUT_US_LINKS = [
   ],
 ]
 
+// TODO: remove old programs
 export const EARLY_CHILDHOOD_EDUCATION_LINK = "/programs/early-childhood-education";
 export const EARLY_CHILDHOOD_EDUCATION = "Early Childhood Education";
 export const YOUTH_DEVELOPMENT_LINK = "/programs/youth-development";
@@ -30,6 +31,27 @@ export const HEALTHCARE_ACCESS_LINK = "/programs/healthcare-access";
 export const HEALTHCARE_ACCESS = "Healthcare Access";
 export const CIVIC_ENGAGEMENT_LINK = "/programs/civic-engagement";
 export const CIVIC_ENGAGEMENT = "Civic Engagement";
+
+export const COMMUNITY_OUTREACH_LINK = "/programs/community-outreach";
+export const COMMUNITY_OUTREACH = "Community outreach and education";
+export const CULTURAL_NAVIGATION_LINK = "/programs/cultural-navigation";
+export const CULTURAL_NAVIGATION = "Cultural navigation";
+export const ESL_LINK = "/programs/esl";
+export const ESL = "ESL and language support";
+export const NATURALIZATION_LINK = "/programs/naturalization";
+export const NATURALIZATION = "Naturalization & citizenship";
+export const UTILITIES_BILLING_LINK = "/programs/utilities-billing";
+export const UTILITIES_BILLING = "Utilities billing advice";
+export const BENEFITS_LINK = "/programs/benefits";
+export const BENEFITS = "Benefits programs for low-income";
+export const NOTARY_LINK = "/programs/notary";
+export const NOTARY = "Notary service";
+export const TAXATION_LINK = "/programs/taxation";
+export const TAXATION = "Taxation and accounting advice";
+export const HEALTH_INSURANCE_LINK = "/programs/health-insurance";
+export const HEALTH_INSURANCE = "Health insurance advice";
+export const REAL_ESTATE_TRANSACTION_LINK = "/programs/real-estate-transaction";
+export const REAL_ESTATE_TRANSACTION = "Real estate transaction consultation";
 
 export const DONATION = "Donation";
 export const DONATION_LINK = "/";
@@ -47,6 +69,19 @@ export const PROGRAM_CONTACTS = "Program Contacts";
 export const JOIN_NEWSLETTER_LINK = "/";
 export const JOIN_NEWSLETTER = "Join Our Newsletter List";
 
+export const PROGRAM_TO_ICON: Record<string, string> = {
+  [COMMUNITY_OUTREACH]: "assets/icons/shopping-icon.svg",
+  [CULTURAL_NAVIGATION]: "assets/icons/news-icon.svg",
+  [ESL]: "assets/icons/network-icon.svg",
+  [NATURALIZATION]: "assets/icons/binoculars-icon.svg",
+  [UTILITIES_BILLING]: "assets/icons/apartments-icon.svg",
+  [BENEFITS]: "assets/icons/piggy-bank-icon.svg",
+  [NOTARY]: "assets/icons/head-icon.svg",
+  [TAXATION]: "assets/icons/medal-icon.svg",
+  [HEALTH_INSURANCE]: "assets/icons/heart-icon.svg",
+  [REAL_ESTATE_TRANSACTION]: "assets/icons/house-icon.svg",
+}
+
 export const SITE_DIR: Record<string, any> = {
   "HOME": HOME_LINK,
   "ABOUT US": {
@@ -54,12 +89,16 @@ export const SITE_DIR: Record<string, any> = {
     [FAQS]: FAQS_LINK
   },
   "PROGRAMS": {
-    [EARLY_CHILDHOOD_EDUCATION]: EARLY_CHILDHOOD_EDUCATION_LINK,
-    [YOUTH_DEVELOPMENT]: YOUTH_DEVELOPMENT_LINK,
-    [FAMILY_SUPPORT]: FAMILY_SUPPORT_LINK,
-    [SENIOR_AND_DISABLED_ADULT_SERVICES]: SENIOR_AND_DISABLED_ADULT_SERVICES_LINK,
-    [HEALTHCARE_ACCESS]: HEALTHCARE_ACCESS_LINK,
-    [CIVIC_ENGAGEMENT]: CIVIC_ENGAGEMENT_LINK,
+    [COMMUNITY_OUTREACH]: COMMUNITY_OUTREACH_LINK,
+    [CULTURAL_NAVIGATION]: CULTURAL_NAVIGATION_LINK,
+    [ESL]: ESL_LINK,
+    [NATURALIZATION]: NATURALIZATION_LINK,
+    [UTILITIES_BILLING]: UTILITIES_BILLING_LINK,
+    [BENEFITS]: BENEFITS_LINK,
+    [NOTARY]: NOTARY_LINK,
+    [TAXATION]: TAXATION_LINK,
+    [HEALTH_INSURANCE]: HEALTH_INSURANCE_LINK,
+    [REAL_ESTATE_TRANSACTION]: REAL_ESTATE_TRANSACTION_LINK,
   },
   "GET INVOLVED": {
     [DONATION]: DONATION_LINK,
@@ -73,6 +112,7 @@ export const SITE_DIR: Record<string, any> = {
   }
 };
 
+// TODO: remove old programs + add new programs
 export const PROGRAMS: any = {
   [EARLY_CHILDHOOD_EDUCATION_LINK]: [
     {
