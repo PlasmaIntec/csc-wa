@@ -66,8 +66,6 @@ export const SITE_LOCATIONS_LINK = "/contact-us/site-locations";
 export const SITE_LOCATIONS = "Site Locations";
 export const PROGRAM_CONTACTS_LINK = "/contact-us/program-contacts";
 export const PROGRAM_CONTACTS = "Program Contacts";
-export const JOIN_NEWSLETTER_LINK = "/";
-export const JOIN_NEWSLETTER = "Join Our Newsletter List";
 
 export const PROGRAM_TO_ICON: Record<string, string> = {
   [COMMUNITY_OUTREACH]: "assets/icons/shopping-icon.svg",
@@ -108,7 +106,6 @@ export const SITE_DIR: Record<string, any> = {
   "CONTACT US": {
     [SITE_LOCATIONS]: SITE_LOCATIONS_LINK,
     [PROGRAM_CONTACTS]: PROGRAM_CONTACTS_LINK,
-    [JOIN_NEWSLETTER]: JOIN_NEWSLETTER_LINK
   }
 };
 
