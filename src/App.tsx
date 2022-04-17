@@ -49,18 +49,22 @@ import {
 export type Language = "english" | "chinese_sc";
 
 const defaultValue = {
-  language: localStorage.getItem("language") as Language,
+  language: "english" as Language,
   setLanguage: (language: SetStateAction<Language>) => localStorage.setItem("language", language as Language)
 }
 
 export const LanguageContext = createContext<{ language: Language, setLanguage: React.Dispatch<React.SetStateAction<Language>> }>(defaultValue)
 
-function App() { 
+function App() {
 
-  const [language, setLanguage] = useState<Language>(localStorage.getItem("language") as Language);
+  const [language, setLanguage] = useState<Language>((localStorage.getItem("language") || defaultValue.language) as Language);
 
   useEffect(() => {
-    localStorage.setItem("language", language as Language)
+    if (language) {
+      localStorage.setItem("language", language)
+    } else {
+      localStorage.setItem("language", defaultValue.language)
+    }
   }, [language]);
 
   return (
