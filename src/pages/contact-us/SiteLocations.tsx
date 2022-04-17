@@ -13,19 +13,7 @@ export const SiteLocations = () => {
         <Accordion.Item eventKey="0">
           <Accordion.Header>Edmonds Office</Accordion.Header>
           <Accordion.Body>
-            Office Number:
-            Fax Number:
-            Hours of Operation:
-            Embedded Map
-          </Accordion.Body>
-        </Accordion.Item>
-        <Accordion.Item eventKey="1">
-          <Accordion.Header>Bothell Office</Accordion.Header>
-          <Accordion.Body>
-            Office Number:
-            Fax Number:
-            Hours of Operation:
-            Embedded Map
+            22727 Hwy 99, Suite 201A, Edmonds WA 98026
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>

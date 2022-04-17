@@ -8,9 +8,6 @@ import {
   Link
 } from "react-router-dom";
 import {
-  ABOUT_US_LINKS, FAQ
-} from "../constants";
-import {
   Menu
 } from "../Menu"
 import {

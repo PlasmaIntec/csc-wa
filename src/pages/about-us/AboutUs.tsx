@@ -1,9 +1,12 @@
 import {
+  useContext,
   useState
 } from "react";
 import {
   Accordion, Col, Container, Row, Tab, Tabs
 } from "react-bootstrap"
+import { LanguageContext } from "../../App";
+import { AboutUsText } from "../constants";
 import {
   Menu
 } from "../Menu"
@@ -15,53 +18,57 @@ export const AboutUs = () => {
     setKey
   ] = useState('integrity');
   return (
-    <>
-      <Menu />
-      <Container className="about-us-container">
-        <Row className="about-us-row">
-          <Col className="about-us-header" xs={4}>
-                Our Mission
-          </Col>
-          <Col xs={6}>
-            <br/>
-            Enable Chinese immigrants to succeed in school, at work and in life by providing holistic and outstanding services of information, referral, advocacy, social and language
-          </Col>
-        </Row>
-        <Row className="about-us-row">
-          <Col className="about-us-span" xs={4}>
-                Our Vision
-          </Col>
-          <Col xs={6}>
-                Enable and empower Chinese immigrants to achieve thriving lives! 
-          </Col>
-        </Row>
-        <Row className="about-us-row">
-          <Col className="about-us-span" xs={4}>
-                Our Values
-          </Col>
-          <Col xs={6}>          
-            <Tabs
-              activeKey={key}
-              onSelect={(k: any) => setKey(k)}
-              className="mb-3 about-us-tabs"
-            >
-              <Tab eventKey="integrity" title="Integrity">
-                <b>Integrity:</b> CSC upholds the honesty and righterousness in all the practices we do. 
-              </Tab>
-              <Tab eventKey="hospitality" title="Hospitality">
-                <b>Hospitality:</b> CSC promotes holistic attitude and approach to serve the immigrants as we are families
-              </Tab>
-              <Tab eventKey="equity" title="Equity">
-                <b>Equity:</b> CSC upholds and advocates the equity and social justice for all stakeholders
-              </Tab>
-              <Tab eventKey="blessed" title="Blessed">
-                <b>Blessed:</b> CSC values the opportunities to serve the immigrants and their families with the blessings and guidance of God
-              </Tab>
-            </Tabs>
+    <LanguageContext.Consumer>
+      {({ language, setLanguage }) => (
+        <>          
+          <Menu />
+          <Container className="about-us-container">
+            <Row className="about-us-row">
+              <Col className="about-us-header" xs={4}>
+                {AboutUsText.mission[language]}
+              </Col>
+              <Col xs={6}>
+                <br/>
+                {AboutUsText.mission_text[language]}
+              </Col>
+            </Row>
+            <Row className="about-us-row">
+              <Col className="about-us-span" xs={4}>
+                {AboutUsText.vision[language]}
+              </Col>
+              <Col xs={6}>
+                {AboutUsText.vision_text[language]}
+              </Col>
+            </Row>
+            <Row className="about-us-row">
+              <Col className="about-us-span" xs={4}>
+                {AboutUsText.values[language]}
+              </Col>
+              <Col xs={6}>          
+                <Tabs
+                  activeKey={key}
+                  onSelect={(k: any) => setKey(k)}
+                  className="mb-3 about-us-tabs"
+                >
+                  <Tab eventKey="integrity" title={AboutUsText.values_integrity_title_text[language]}>
+                    <b>{AboutUsText.values_integrity_text[language]}</b> {AboutUsText.values_integrity_description_text[language]}
+                  </Tab>
+                  <Tab eventKey="hospitality" title={AboutUsText.values_hospitality_title_text[language]}>
+                    <b>{AboutUsText.values_hospitality_text[language]}</b> {AboutUsText.values_hospitality_description_text[language]}
+                  </Tab>
+                  <Tab eventKey="equity" title={AboutUsText.values_equity_title_text[language]}>
+                    <b>{AboutUsText.values_equity_text[language]}</b> {AboutUsText.values_equity_description_text[language]}
+                  </Tab>
+                  <Tab eventKey="blessed" title={AboutUsText.values_blessed_title_text[language]}>
+                    <b>{AboutUsText.values_blessed_text[language]}</b> {AboutUsText.values_blessed_description_text[language]}
+                  </Tab>
+                </Tabs>
 
-          </Col>
-        </Row>
-      </Container>
-    </>
+              </Col>
+            </Row>
+          </Container>
+        </>
+      )}
+    </LanguageContext.Consumer>
   )
 }

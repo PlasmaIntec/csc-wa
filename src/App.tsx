@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext, SetStateAction, useEffect, useState } from 'react';
 import {
   Routes, Route, Link
 } from "react-router-dom";
@@ -19,7 +19,7 @@ import {
   BOARD_OF_DIRECTORS_LINK,
   CAREERS_LINK,
   FAQS_LINK,
-  HOME_LINK, IN_KIND_DONATION_LINK, PROGRAM_CONTACTS_LINK, SITE_LOCATIONS_LINK, VOLUNTEER_LINK
+  HOME_LINK, IN_KIND_DONATION_LINK, PROGRAM_CONTACTS_LINK, SITE_LOCATIONS_LINK, VOLUNTEER_LINK, WELCOME
 } from './pages/constants';
 import {
   Programs
@@ -46,25 +46,46 @@ import {
   InKindDonation
 } from './pages/get-involved/InKindDonation';
 
-function App() {
+export type Language = "english" | "chinese_sc";
+
+const defaultValue = {
+  language: localStorage.getItem("language") as Language,
+  setLanguage: (language: SetStateAction<Language>) => localStorage.setItem("language", language as Language)
+}
+
+export const LanguageContext = createContext<{ language: Language, setLanguage: React.Dispatch<React.SetStateAction<Language>> }>(defaultValue)
+
+function App() { 
+
+  const [language, setLanguage] = useState<Language>(localStorage.getItem("language") as Language);
+
+  useEffect(() => {
+    localStorage.setItem("language", language as Language)
+  }, [language]);
+
   return (
-    <div className="App">
-      <h1 className="home-header">Welcome to Chinese Service Center</h1>      
-      <img className="home-red-logo" src="/assets/csc-logo.png"></img>
-      <Routes>
-        <Route path={HOME_LINK} element={<Home />} />
-        <Route path="/programs/:program" element={<Programs />} />
-        <Route path={SITE_LOCATIONS_LINK} element={<SiteLocations />} />
-        <Route path={PROGRAM_CONTACTS_LINK} element={<ProgramContacts />} />
-        <Route path={ABOUT_US_LINK} element={<AboutUs />} />
-        <Route path={BOARD_OF_DIRECTORS_LINK} element={<Leadership />} />
-        <Route path={ANNUAL_REPORTS_LINK} element={<AnnualReports />} />
-        <Route path={CAREERS_LINK} element={<Careers />} />
-        <Route path={FAQS_LINK} element={<FAQs />} />
-        <Route path={VOLUNTEER_LINK} element={<Volunteer />} />
-        <Route path={IN_KIND_DONATION_LINK} element={<InKindDonation />} />
-      </Routes>
-    </div>
+    <LanguageContext.Provider value={{
+      language,
+      setLanguage
+    }}>
+      <div className="App">
+        <h1 className="home-header">{WELCOME[language]}</h1>      
+        <img className="home-red-logo" src="/assets/csc-logo.png"></img>
+        <Routes>
+          <Route path={HOME_LINK} element={<Home />} />
+          <Route path="/programs/:program" element={<Programs />} />
+          <Route path={SITE_LOCATIONS_LINK} element={<SiteLocations />} />
+          <Route path={PROGRAM_CONTACTS_LINK} element={<ProgramContacts />} />
+          <Route path={ABOUT_US_LINK} element={<AboutUs />} />
+          <Route path={BOARD_OF_DIRECTORS_LINK} element={<Leadership />} />
+          <Route path={ANNUAL_REPORTS_LINK} element={<AnnualReports />} />
+          <Route path={CAREERS_LINK} element={<Careers />} />
+          <Route path={FAQS_LINK} element={<FAQs />} />
+          <Route path={VOLUNTEER_LINK} element={<Volunteer />} />
+          <Route path={IN_KIND_DONATION_LINK} element={<InKindDonation />} />
+        </Routes>
+      </div>
+    </LanguageContext.Provider>
   );
 }
 
