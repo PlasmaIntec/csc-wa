@@ -14,12 +14,13 @@ import {
   HashLink as Link
 } from 'react-router-hash-link';
 import "./style.css";
+import { LanguageContext } from "../../App";
 
 export const Programs = () => {
   const location = useLocation();
   const path = location.pathname;
 
-  const TableOfContents = (path: string) => (
+  const TableOfContents = (path: string, language: string) => (
     <div className="card contents-card">
       <ul className="contents no-bullet">
         {
@@ -29,8 +30,8 @@ export const Programs = () => {
             } = program;
             return (
               <li>
-                <Link to={`#${encode(title)}`}>
-                  {title}
+                <Link to={`#${encode(title[language])}`}>
+                  {title[language]}
                 </Link>
               </li>
             )
@@ -50,41 +51,45 @@ export const Programs = () => {
     </div>
   )
 
-  const Contents = (path: string) => (
+  const Contents = (path: string, language: string) => (
     PROGRAMS[path].map((program: any) => {
       const {
         title, content
       } = program;
-      return (
+      return content.map((contentFragment: any) => (
         <div className="contents">
           <h3>
-            <Anchor id={encode(title)} className="toc-header">
-              {title}
+            <Anchor id={encode(title[language])} className="toc-header">
+              {title[language]}
             </Anchor>
           </h3>
           <p>
-            {content}
+            {contentFragment[language]}
           </p>
         </div>
-      )
+      ))
     })
   )
 
   return (
-    <>
-      <Menu />
-      <Container>
-        <Row className="justify-content-md-center">
-          <Col>
-            {TableOfContents(path)}
-            {ContactInfo(path)}
-          </Col>
-          <Col>
-            {Contents(path)}
-          </Col>
-        </Row>
-      </Container>
-    </>
+    <LanguageContext.Consumer>
+      {({ language, setLanguage }) => (    
+        <>
+          <Menu />
+          <Container>
+            <Row className="justify-content-md-center">
+              <Col>
+                {TableOfContents(path, language)}
+                {ContactInfo(path)}
+              </Col>
+              <Col>
+                {Contents(path, language)}
+              </Col>
+            </Row>
+          </Container>
+        </>
+      )}
+    </LanguageContext.Consumer>
   )
 }
 
