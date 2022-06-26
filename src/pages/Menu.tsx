@@ -59,10 +59,10 @@ export const Menu = () => {
           </div>
           <div className="top-bar-right">
             <Button onClick={() => setLanguage("chinese_sc")}>
-              chinese
+              Chinese
             </Button>
             <Button onClick={() => setLanguage("english")}>
-              english
+              English
             </Button>
           </div>
         </Nav>

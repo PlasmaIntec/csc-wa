@@ -51,3 +51,7 @@
 .about-us-row.row {
     width: 100%;
 }
+
+.faq-answer {
+    text-align: left;
+}

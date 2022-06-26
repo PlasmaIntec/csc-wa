@@ -41,7 +41,7 @@ export const FAQs = () => {
                       return (
                         <Accordion.Item eventKey={`${index}`}>
                           <Accordion.Header>{question[language]}</Accordion.Header>
-                          <Accordion.Body>{answer[language]}</Accordion.Body>
+                          <Accordion.Body className="faq-answer">{answer[language]}</Accordion.Body>
                         </Accordion.Item>
                       )
                     })

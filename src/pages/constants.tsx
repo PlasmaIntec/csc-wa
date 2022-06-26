@@ -37,7 +37,7 @@ export const EMAIL = {
 };
 export const HOURS = {
   "english": "Hours",
-  "chinese_sc": "小时"
+  "chinese_sc": "服务时间"
 };
 export const COPYRIGHT = {
   "english": "Copyright 2022. All rights reserved.",
@@ -140,18 +140,18 @@ export const RESOURCES_LINK = "/resources";
 
 export const SITE_LOCATIONS_LINK = "/contact-us/site-locations";
 export const SITE_LOCATIONS = {
-  "english": "Site Locations",
+  "english": "Site Location",
   "chinese_sc": "站点位置"
 }
 export const PROGRAM_CONTACTS_LINK = "/contact-us/program-contacts";
 export const PROGRAM_CONTACTS = {
-  "english": "Program Contacts",
+  "english": "Program Contact",
   "chinese_sc": "计划联系人"
 }
 
 export const WELCOME = {
   "english": "Welcome to Chinese Service Center",
-  "chinese_sc": "欢迎来到中文服务中心",
+  "chinese_sc": "欢迎来到华人服务社",
 }
 
 export const PROGRAM_TO_ICON = (language: Language): Record<string, string> => ({
@@ -169,7 +169,7 @@ export const PROGRAM_TO_ICON = (language: Language): Record<string, string> => (
 
 export const SITE_DIR_HOME = {
   "english": "HOME",
-  "chinese_sc": "家",
+  "chinese_sc": "主页",
 }
 export const SITE_DIR_ABOUT_US = {
   "english": "ABOUT US",
@@ -177,7 +177,7 @@ export const SITE_DIR_ABOUT_US = {
 }
 export const SITE_DIR_PROGRAMS = {
   "english": "PROGRAMS",
-  "chinese_sc": "程式",
+  "chinese_sc": "服务范围",
 }
 export const SITE_DIR_GET_INVOLVED = {
   "english": "GET INVOLVED",
